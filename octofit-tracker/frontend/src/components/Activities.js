@@ -5,7 +5,7 @@ function Activities() {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://musical-giggle-5r7rjwx6gj52759j-8000.app.github.dev/api/activity/') // /api/activity/ endpoint
+    fetch('https://musical-giggle-5r7rjwx6gj52759j-8000.app.github.dev/api/activity/') // /api/activity/endpoint
       .then(res => res.json())
       .then(data => setActivities(data));
   }, []);
